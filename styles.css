@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap");
+
+html,
+body {
+  background-image: url("img/bg-final.jpg");
+  /*  
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;     */
+    width: auto;
+    height: auto;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+   background-size: 100% 100%;
+   object-fit: cover;
+  /* animation: gradient 25s ease infinite; */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.card-img{
+  width: 17rem;
+  height: 17rem;
+  border-radius: 15px;
+}
+.card-header{
+  padding: 0;
+  padding-top: 0;
+}
+
+.row{
+  padding-left: 0;
+  padding-left: calc(var(--bs-gutter-x) * 2.1);
+  margin-left: 0;
+}
+
+
+.flip-card{
+    display: grid !important;  
+    grid-gap: 5px;  
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px);  
+}
+
+.header{
+background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.content{
+  padding-top: 0;
+  padding-left: 0;
+  border-radius: 15px;
+}
+
+.logo-2 {
+  max-width: 60% !important;
+  height: 25% !important;
+}
+.login_btn{
+  color: black;
+  background-color: #e36428;
+  width: 6.25rem;
+  margin-top: 2rem;
+  }
+  
+  .login_btn:hover{
+  color: black;
+  border-radius: 1px solid;
+  border-color: yellowgreen;
+  box-shadow: red;
+  background-color: white;
+  }
+
+.flip-card {
+  grid-gap: 5px;  
+  grid-template-columns: repeat(auto-fit, 100px);
+  grid-template-rows: repeat(2, 100px);  
+  background-color: transparent;
+  width: 25rem;
+  height: 25rem;
+  perspective: 62.5rem;
+  border-radius: 15px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 20rem;
+  height: 24rem;
+  perspective: 62.5rem;
+  /* box-shadow: 3px  3px 50px rgba(14, 14, 14, 0.897); */
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  /* 
+  transform-style: preserve-3d; */
+}
+
+.flip-card:hover .flip-card-inner {
+  box-shadow: 5px 8px 16px 0 rgba(255, 218, 71, 0.864);
+  border-radius: 15px;
+  width: 21rem;
+  height: 24rem;
+  perspective: 62.5rem;
+  box-shadow: 5px  5px 50px rgba(14, 14, 14, 0.981);
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  transition: transform 2s;
+}
+
+
+.flip-card-front,
+.flip-card-back {
+  padding-top: 1rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 15px;
+
+}
+
+.flip-card-front {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  border-radius: 15px;
+
+}
+
+/* .flip-card-back {
+  background-color: #ffffff;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 15px;
+
+} */
+
+footer{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  font-size: medium;
+}
